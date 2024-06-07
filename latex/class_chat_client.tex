@@ -1,0 +1,416 @@
+\doxysection{Chat\+Client Class Reference}
+\hypertarget{class_chat_client}{}\label{class_chat_client}\index{ChatClient@{ChatClient}}
+
+
+The \doxylink{class_chat_client}{Chat\+Client} class manages chat rooms, friends, and user interactions.  
+
+
+
+
+{\ttfamily \#include $<$chatclient.\+h$>$}
+
+Inheritance diagram for Chat\+Client\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_chat_client}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Signals}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_chat_client_ad4165d1d8d8f3755353eac7dcc0257dc}{message\+Received}} (const \mbox{\hyperlink{class_message}{Message}} \&message)
+\begin{DoxyCompactList}\small\item\em Emitted when a message is received. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_chat_client_a8d20b3dd41d4f1f05e950db3262b68bc}\label{class_chat_client_a8d20b3dd41d4f1f05e950db3262b68bc} 
+{\bfseries Chat\+Client} (QObject \texorpdfstring{$\ast$}{*}parent=nullptr)
+\item 
+void \mbox{\hyperlink{class_chat_client_a8f439ac5b4b90db5b72399cd0480e759}{set\+User}} (const \mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Sets the user for this chat client. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_user}{User}} \mbox{\hyperlink{class_chat_client_a118cdbc9cff002f6169bb1e1307f3c13}{get\+User}} () const
+\begin{DoxyCompactList}\small\item\em Gets the user of this chat client. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_client_af37a0f29528d966ec23c345dca3e3c95}{create\+Chat}} (const QString \&friend\+Name)
+\begin{DoxyCompactList}\small\item\em Creates a chat with a friend. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_client_aa8130d88ab08ad74693bd9da308a1087}{create\+Group\+Chat}} (const QString \&group\+Name, const QString\+List \&users, const QString \&creator)
+\begin{DoxyCompactList}\small\item\em Creates a group chat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_client_a1352eca8d3760bfb489cc3ca81d95453}{send\+Message}} (const QString \&room\+Name, const QString \&content)
+\begin{DoxyCompactList}\small\item\em Sends a message to a chat room. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_client_a74d1a6f01292be5312963fda8f8f837c}{send\+Group\+Chat\+Message}} (const QString \&room\+Name, const QString \&content)
+\begin{DoxyCompactList}\small\item\em Sends a message to a group chat. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_client_a6ffdd6a403ccc04ba7c488d0f2d3b487}{delete\+Chat}} (const QString \&room\+Name)
+\begin{DoxyCompactList}\small\item\em Deletes a chat. \end{DoxyCompactList}\item 
+QList$<$ \mbox{\hyperlink{class_chat_room}{Chat\+Room}} $>$ \mbox{\hyperlink{class_chat_client_ab07770cdbe368f371ba7cd9270c9f5a5}{get\+Chat\+Rooms}} () const
+\begin{DoxyCompactList}\small\item\em Gets the list of chat rooms. \end{DoxyCompactList}\item 
+\Hypertarget{class_chat_client_a2413336a03550d88d20bc37904c2125e}\label{class_chat_client_a2413336a03550d88d20bc37904c2125e} 
+void {\bfseries save\+Chat\+Rooms} () const
+\begin{DoxyCompactList}\small\item\em Saves the chat rooms. \end{DoxyCompactList}\item 
+\Hypertarget{class_chat_client_a16480968fbc8d3e562c3c6e6d743d004}\label{class_chat_client_a16480968fbc8d3e562c3c6e6d743d004} 
+void {\bfseries load\+Chat\+Rooms} ()
+\begin{DoxyCompactList}\small\item\em Loads the chat rooms. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_client_a64b5ea287b21b6936ed507c1ad3c4f95}{add\+Friend}} (const QString \&friend\+Name)
+\begin{DoxyCompactList}\small\item\em Adds a friend. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_client_a0d758c38190de7087d60de7f36ccbb41}{remove\+Friend}} (const QString \&friend\+Name)
+\begin{DoxyCompactList}\small\item\em Removes a friend. \end{DoxyCompactList}\item 
+QList$<$ \mbox{\hyperlink{class_friend}{Friend}} $>$ \mbox{\hyperlink{class_chat_client_ab45ff11c8a4682b24bbe0ff925523e53}{get\+Friends}} () const
+\begin{DoxyCompactList}\small\item\em Gets the list of friends. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_client_acc878f3bb48206d1653e21558730cf1c}{save\+Friends}} (const QString \&username) const
+\begin{DoxyCompactList}\small\item\em Saves the friends list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_client_adde9d948f05d40381c424de83e39ea53}{load\+Friends}} (const QString \&username)
+\begin{DoxyCompactList}\small\item\em Loads the friends list. \end{DoxyCompactList}\item 
+QList$<$ QString $>$ \mbox{\hyperlink{class_chat_client_a35004a2baded24db2f1acf02499fb78b}{get\+Registered\+Users}} () const
+\begin{DoxyCompactList}\small\item\em Gets the list of registered users. \end{DoxyCompactList}\item 
+\Hypertarget{class_chat_client_a75d827bd62210f33e548a2ad96b91801}\label{class_chat_client_a75d827bd62210f33e548a2ad96b91801} 
+void {\bfseries load\+Registered\+Users} ()
+\begin{DoxyCompactList}\small\item\em Loads the registered users. \end{DoxyCompactList}\item 
+\Hypertarget{class_chat_client_a9dfbbf1680a05739d9f14a23f7101c8c}\label{class_chat_client_a9dfbbf1680a05739d9f14a23f7101c8c} 
+void {\bfseries create\+User\+Files} () const
+\begin{DoxyCompactList}\small\item\em Creates user-\/specific files. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_chat_client_a92d60523857784756b2d1f6f7fc5a63d}{generate\+Chat\+Filename}} (const QString \&friend\+Name) const
+\begin{DoxyCompactList}\small\item\em Generates a chat filename. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_client_a422e2dd5e87c82956c54372a2dbbf7d2}{save\+Chat\+To\+File}} (const QString \&room\+Name) const
+\begin{DoxyCompactList}\small\item\em Saves a chat to a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_client_a7f840922268e5874250d70ef95794090}{load\+Chat\+From\+File}} (const QString \&room\+Name)
+\begin{DoxyCompactList}\small\item\em Loads a chat from a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_client_a95bbdc3cf48fa27245598d9fcb6a4360}{append\+Chat\+To\+User\+Chat\+Rooms}} (const QString \&username, const QString \&room\+Name) const
+\begin{DoxyCompactList}\small\item\em Appends a chat to the user\textquotesingle{}s chat rooms. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_client_af1fdd1e06b359258530a3210f523f3d9}{remove\+Chat\+From\+User\+Chat\+Rooms}} (const QString \&username, const QString \&room\+Name) const
+\begin{DoxyCompactList}\small\item\em Removes a chat from the user\textquotesingle{}s chat rooms. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_client_a57f35e9c7c74f848485e34a0642e5acc}{add\+User\+To\+Group}} (const QString \&group\+Name, const QString \&username)
+\begin{DoxyCompactList}\small\item\em Adds a user to a group chat. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_chat_client}{Chat\+Client} class manages chat rooms, friends, and user interactions. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_chat_client_a64b5ea287b21b6936ed507c1ad3c4f95}\index{ChatClient@{ChatClient}!addFriend@{addFriend}}
+\index{addFriend@{addFriend}!ChatClient@{ChatClient}}
+\doxysubsubsection{\texorpdfstring{addFriend()}{addFriend()}}
+{\footnotesize\ttfamily \label{class_chat_client_a64b5ea287b21b6936ed507c1ad3c4f95} 
+void Chat\+Client\+::add\+Friend (\begin{DoxyParamCaption}\item[{const QString \&}]{friend\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Adds a friend. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em friend\+Name} & The name of the friend. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chat_client_a57f35e9c7c74f848485e34a0642e5acc}\index{ChatClient@{ChatClient}!addUserToGroup@{addUserToGroup}}
+\index{addUserToGroup@{addUserToGroup}!ChatClient@{ChatClient}}
+\doxysubsubsection{\texorpdfstring{addUserToGroup()}{addUserToGroup()}}
+{\footnotesize\ttfamily \label{class_chat_client_a57f35e9c7c74f848485e34a0642e5acc} 
+void Chat\+Client\+::add\+User\+To\+Group (\begin{DoxyParamCaption}\item[{const QString \&}]{group\+Name}{, }\item[{const QString \&}]{username}{}\end{DoxyParamCaption})}
+
+
+
+Adds a user to a group chat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+Name} & The name of the group chat. \\
+\hline
+{\em username} & The username of the user. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chat_client_a95bbdc3cf48fa27245598d9fcb6a4360}\index{ChatClient@{ChatClient}!appendChatToUserChatRooms@{appendChatToUserChatRooms}}
+\index{appendChatToUserChatRooms@{appendChatToUserChatRooms}!ChatClient@{ChatClient}}
+\doxysubsubsection{\texorpdfstring{appendChatToUserChatRooms()}{appendChatToUserChatRooms()}}
+{\footnotesize\ttfamily \label{class_chat_client_a95bbdc3cf48fa27245598d9fcb6a4360} 
+void Chat\+Client\+::append\+Chat\+To\+User\+Chat\+Rooms (\begin{DoxyParamCaption}\item[{const QString \&}]{username}{, }\item[{const QString \&}]{room\+Name}{}\end{DoxyParamCaption}) const}
+
+
+
+Appends a chat to the user\textquotesingle{}s chat rooms. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username of the user. \\
+\hline
+{\em room\+Name} & The name of the chat room. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chat_client_af37a0f29528d966ec23c345dca3e3c95}\index{ChatClient@{ChatClient}!createChat@{createChat}}
+\index{createChat@{createChat}!ChatClient@{ChatClient}}
+\doxysubsubsection{\texorpdfstring{createChat()}{createChat()}}
+{\footnotesize\ttfamily \label{class_chat_client_af37a0f29528d966ec23c345dca3e3c95} 
+void Chat\+Client\+::create\+Chat (\begin{DoxyParamCaption}\item[{const QString \&}]{friend\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Creates a chat with a friend. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em friend\+Name} & The name of the friend. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chat_client_aa8130d88ab08ad74693bd9da308a1087}\index{ChatClient@{ChatClient}!createGroupChat@{createGroupChat}}
+\index{createGroupChat@{createGroupChat}!ChatClient@{ChatClient}}
+\doxysubsubsection{\texorpdfstring{createGroupChat()}{createGroupChat()}}
+{\footnotesize\ttfamily \label{class_chat_client_aa8130d88ab08ad74693bd9da308a1087} 
+void Chat\+Client\+::create\+Group\+Chat (\begin{DoxyParamCaption}\item[{const QString \&}]{group\+Name}{, }\item[{const QString\+List \&}]{users}{, }\item[{const QString \&}]{creator}{}\end{DoxyParamCaption})}
+
+
+
+Creates a group chat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group\+Name} & The name of the group. \\
+\hline
+{\em users} & The list of users. \\
+\hline
+{\em creator} & The creator of the group. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chat_client_a6ffdd6a403ccc04ba7c488d0f2d3b487}\index{ChatClient@{ChatClient}!deleteChat@{deleteChat}}
+\index{deleteChat@{deleteChat}!ChatClient@{ChatClient}}
+\doxysubsubsection{\texorpdfstring{deleteChat()}{deleteChat()}}
+{\footnotesize\ttfamily \label{class_chat_client_a6ffdd6a403ccc04ba7c488d0f2d3b487} 
+void Chat\+Client\+::delete\+Chat (\begin{DoxyParamCaption}\item[{const QString \&}]{room\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Deletes a chat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+Name} & The name of the chat room. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chat_client_a92d60523857784756b2d1f6f7fc5a63d}\index{ChatClient@{ChatClient}!generateChatFilename@{generateChatFilename}}
+\index{generateChatFilename@{generateChatFilename}!ChatClient@{ChatClient}}
+\doxysubsubsection{\texorpdfstring{generateChatFilename()}{generateChatFilename()}}
+{\footnotesize\ttfamily \label{class_chat_client_a92d60523857784756b2d1f6f7fc5a63d} 
+QString Chat\+Client\+::generate\+Chat\+Filename (\begin{DoxyParamCaption}\item[{const QString \&}]{friend\+Name}{}\end{DoxyParamCaption}) const}
+
+
+
+Generates a chat filename. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em friend\+Name} & The name of the friend. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The generated filename. 
+\end{DoxyReturn}
+\Hypertarget{class_chat_client_ab07770cdbe368f371ba7cd9270c9f5a5}\index{ChatClient@{ChatClient}!getChatRooms@{getChatRooms}}
+\index{getChatRooms@{getChatRooms}!ChatClient@{ChatClient}}
+\doxysubsubsection{\texorpdfstring{getChatRooms()}{getChatRooms()}}
+{\footnotesize\ttfamily \label{class_chat_client_ab07770cdbe368f371ba7cd9270c9f5a5} 
+QList$<$ \mbox{\hyperlink{class_chat_room}{Chat\+Room}} $>$ Chat\+Client\+::get\+Chat\+Rooms (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the list of chat rooms. 
+
+\begin{DoxyReturn}{Returns}
+The list of chat rooms. 
+\end{DoxyReturn}
+\Hypertarget{class_chat_client_ab45ff11c8a4682b24bbe0ff925523e53}\index{ChatClient@{ChatClient}!getFriends@{getFriends}}
+\index{getFriends@{getFriends}!ChatClient@{ChatClient}}
+\doxysubsubsection{\texorpdfstring{getFriends()}{getFriends()}}
+{\footnotesize\ttfamily \label{class_chat_client_ab45ff11c8a4682b24bbe0ff925523e53} 
+QList$<$ \mbox{\hyperlink{class_friend}{Friend}} $>$ Chat\+Client\+::get\+Friends (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the list of friends. 
+
+\begin{DoxyReturn}{Returns}
+The list of friends. 
+\end{DoxyReturn}
+\Hypertarget{class_chat_client_a35004a2baded24db2f1acf02499fb78b}\index{ChatClient@{ChatClient}!getRegisteredUsers@{getRegisteredUsers}}
+\index{getRegisteredUsers@{getRegisteredUsers}!ChatClient@{ChatClient}}
+\doxysubsubsection{\texorpdfstring{getRegisteredUsers()}{getRegisteredUsers()}}
+{\footnotesize\ttfamily \label{class_chat_client_a35004a2baded24db2f1acf02499fb78b} 
+QList$<$ QString $>$ Chat\+Client\+::get\+Registered\+Users (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the list of registered users. 
+
+\begin{DoxyReturn}{Returns}
+The list of registered users. 
+\end{DoxyReturn}
+\Hypertarget{class_chat_client_a118cdbc9cff002f6169bb1e1307f3c13}\index{ChatClient@{ChatClient}!getUser@{getUser}}
+\index{getUser@{getUser}!ChatClient@{ChatClient}}
+\doxysubsubsection{\texorpdfstring{getUser()}{getUser()}}
+{\footnotesize\ttfamily \label{class_chat_client_a118cdbc9cff002f6169bb1e1307f3c13} 
+\mbox{\hyperlink{class_user}{User}} Chat\+Client\+::get\+User (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the user of this chat client. 
+
+\begin{DoxyReturn}{Returns}
+The user. 
+\end{DoxyReturn}
+\Hypertarget{class_chat_client_a7f840922268e5874250d70ef95794090}\index{ChatClient@{ChatClient}!loadChatFromFile@{loadChatFromFile}}
+\index{loadChatFromFile@{loadChatFromFile}!ChatClient@{ChatClient}}
+\doxysubsubsection{\texorpdfstring{loadChatFromFile()}{loadChatFromFile()}}
+{\footnotesize\ttfamily \label{class_chat_client_a7f840922268e5874250d70ef95794090} 
+void Chat\+Client\+::load\+Chat\+From\+File (\begin{DoxyParamCaption}\item[{const QString \&}]{room\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Loads a chat from a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+Name} & The name of the chat room. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chat_client_adde9d948f05d40381c424de83e39ea53}\index{ChatClient@{ChatClient}!loadFriends@{loadFriends}}
+\index{loadFriends@{loadFriends}!ChatClient@{ChatClient}}
+\doxysubsubsection{\texorpdfstring{loadFriends()}{loadFriends()}}
+{\footnotesize\ttfamily \label{class_chat_client_adde9d948f05d40381c424de83e39ea53} 
+void Chat\+Client\+::load\+Friends (\begin{DoxyParamCaption}\item[{const QString \&}]{username}{}\end{DoxyParamCaption})}
+
+
+
+Loads the friends list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username of the current user. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chat_client_ad4165d1d8d8f3755353eac7dcc0257dc}\index{ChatClient@{ChatClient}!messageReceived@{messageReceived}}
+\index{messageReceived@{messageReceived}!ChatClient@{ChatClient}}
+\doxysubsubsection{\texorpdfstring{messageReceived}{messageReceived}}
+{\footnotesize\ttfamily \label{class_chat_client_ad4165d1d8d8f3755353eac7dcc0257dc} 
+void Chat\+Client\+::message\+Received (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_message}{Message}} \&}]{message}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [signal]}}
+
+
+
+Emitted when a message is received. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The received message. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chat_client_af1fdd1e06b359258530a3210f523f3d9}\index{ChatClient@{ChatClient}!removeChatFromUserChatRooms@{removeChatFromUserChatRooms}}
+\index{removeChatFromUserChatRooms@{removeChatFromUserChatRooms}!ChatClient@{ChatClient}}
+\doxysubsubsection{\texorpdfstring{removeChatFromUserChatRooms()}{removeChatFromUserChatRooms()}}
+{\footnotesize\ttfamily \label{class_chat_client_af1fdd1e06b359258530a3210f523f3d9} 
+void Chat\+Client\+::remove\+Chat\+From\+User\+Chat\+Rooms (\begin{DoxyParamCaption}\item[{const QString \&}]{username}{, }\item[{const QString \&}]{room\+Name}{}\end{DoxyParamCaption}) const}
+
+
+
+Removes a chat from the user\textquotesingle{}s chat rooms. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username of the user. \\
+\hline
+{\em room\+Name} & The name of the chat room. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chat_client_a0d758c38190de7087d60de7f36ccbb41}\index{ChatClient@{ChatClient}!removeFriend@{removeFriend}}
+\index{removeFriend@{removeFriend}!ChatClient@{ChatClient}}
+\doxysubsubsection{\texorpdfstring{removeFriend()}{removeFriend()}}
+{\footnotesize\ttfamily \label{class_chat_client_a0d758c38190de7087d60de7f36ccbb41} 
+void Chat\+Client\+::remove\+Friend (\begin{DoxyParamCaption}\item[{const QString \&}]{friend\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Removes a friend. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em friend\+Name} & The name of the friend. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chat_client_a422e2dd5e87c82956c54372a2dbbf7d2}\index{ChatClient@{ChatClient}!saveChatToFile@{saveChatToFile}}
+\index{saveChatToFile@{saveChatToFile}!ChatClient@{ChatClient}}
+\doxysubsubsection{\texorpdfstring{saveChatToFile()}{saveChatToFile()}}
+{\footnotesize\ttfamily \label{class_chat_client_a422e2dd5e87c82956c54372a2dbbf7d2} 
+void Chat\+Client\+::save\+Chat\+To\+File (\begin{DoxyParamCaption}\item[{const QString \&}]{room\+Name}{}\end{DoxyParamCaption}) const}
+
+
+
+Saves a chat to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+Name} & The name of the chat room. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chat_client_acc878f3bb48206d1653e21558730cf1c}\index{ChatClient@{ChatClient}!saveFriends@{saveFriends}}
+\index{saveFriends@{saveFriends}!ChatClient@{ChatClient}}
+\doxysubsubsection{\texorpdfstring{saveFriends()}{saveFriends()}}
+{\footnotesize\ttfamily \label{class_chat_client_acc878f3bb48206d1653e21558730cf1c} 
+void Chat\+Client\+::save\+Friends (\begin{DoxyParamCaption}\item[{const QString \&}]{username}{}\end{DoxyParamCaption}) const}
+
+
+
+Saves the friends list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em username} & The username of the current user. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chat_client_a74d1a6f01292be5312963fda8f8f837c}\index{ChatClient@{ChatClient}!sendGroupChatMessage@{sendGroupChatMessage}}
+\index{sendGroupChatMessage@{sendGroupChatMessage}!ChatClient@{ChatClient}}
+\doxysubsubsection{\texorpdfstring{sendGroupChatMessage()}{sendGroupChatMessage()}}
+{\footnotesize\ttfamily \label{class_chat_client_a74d1a6f01292be5312963fda8f8f837c} 
+void Chat\+Client\+::send\+Group\+Chat\+Message (\begin{DoxyParamCaption}\item[{const QString \&}]{room\+Name}{, }\item[{const QString \&}]{content}{}\end{DoxyParamCaption})}
+
+
+
+Sends a message to a group chat. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+Name} & The name of the group chat. \\
+\hline
+{\em content} & The content of the message. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chat_client_a1352eca8d3760bfb489cc3ca81d95453}\index{ChatClient@{ChatClient}!sendMessage@{sendMessage}}
+\index{sendMessage@{sendMessage}!ChatClient@{ChatClient}}
+\doxysubsubsection{\texorpdfstring{sendMessage()}{sendMessage()}}
+{\footnotesize\ttfamily \label{class_chat_client_a1352eca8d3760bfb489cc3ca81d95453} 
+void Chat\+Client\+::send\+Message (\begin{DoxyParamCaption}\item[{const QString \&}]{room\+Name}{, }\item[{const QString \&}]{content}{}\end{DoxyParamCaption})}
+
+
+
+Sends a message to a chat room. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em room\+Name} & The name of the chat room. \\
+\hline
+{\em content} & The content of the message. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chat_client_a8f439ac5b4b90db5b72399cd0480e759}\index{ChatClient@{ChatClient}!setUser@{setUser}}
+\index{setUser@{setUser}!ChatClient@{ChatClient}}
+\doxysubsubsection{\texorpdfstring{setUser()}{setUser()}}
+{\footnotesize\ttfamily \label{class_chat_client_a8f439ac5b4b90db5b72399cd0480e759} 
+void Chat\+Client\+::set\+User (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_user}{User}} \&}]{user}{}\end{DoxyParamCaption})}
+
+
+
+Sets the user for this chat client. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user to be set. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+chatclient.\+h\item 
+chatclient.\+cpp\end{DoxyCompactItemize}

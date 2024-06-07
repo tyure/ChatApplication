@@ -1,0 +1,112 @@
+\doxysection{Message Class Reference}
+\hypertarget{class_message}{}\label{class_message}\index{Message@{Message}}
+
+
+The \doxylink{class_message}{Message} class represents a message in a chat.  
+
+
+
+
+{\ttfamily \#include $<$message.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_message_ae91b2610a7df1e2695a4debb257ec50a}{Message}} (const QString \&sender, const QString \&content, const QDate\+Time \&timestamp, const QString \&chat\+Room\+Name)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_message}{Message}. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_message_af512b41449d2ae54fb90d309991f7b50}{get\+Sender}} () const
+\begin{DoxyCompactList}\small\item\em Gets the sender of the message. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_message_ae64d3644ca4c42b0b09422eb5676ada6}{get\+Content}} () const
+\begin{DoxyCompactList}\small\item\em Gets the content of the message. \end{DoxyCompactList}\item 
+QDate\+Time \mbox{\hyperlink{class_message_ab5e1eb7db5790225e798dd8517ca292b}{get\+Timestamp}} () const
+\begin{DoxyCompactList}\small\item\em Gets the timestamp of the message. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_message_abeb18628319096b1679c0ce4e8e51344}{get\+Chat\+Room\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Gets the chat room name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_message}{Message} class represents a message in a chat. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_message_ae91b2610a7df1e2695a4debb257ec50a}\index{Message@{Message}!Message@{Message}}
+\index{Message@{Message}!Message@{Message}}
+\doxysubsubsection{\texorpdfstring{Message()}{Message()}}
+{\footnotesize\ttfamily \label{class_message_ae91b2610a7df1e2695a4debb257ec50a} 
+Message\+::\+Message (\begin{DoxyParamCaption}\item[{const QString \&}]{sender}{, }\item[{const QString \&}]{content}{, }\item[{const QDate\+Time \&}]{timestamp}{, }\item[{const QString \&}]{chat\+Room\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_message}{Message}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sender} & The sender of the message. \\
+\hline
+{\em content} & The content of the message. \\
+\hline
+{\em timestamp} & The timestamp of the message. \\
+\hline
+{\em chat\+Room\+Name} & The name of the chat room. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_message_abeb18628319096b1679c0ce4e8e51344}\index{Message@{Message}!getChatRoomName@{getChatRoomName}}
+\index{getChatRoomName@{getChatRoomName}!Message@{Message}}
+\doxysubsubsection{\texorpdfstring{getChatRoomName()}{getChatRoomName()}}
+{\footnotesize\ttfamily \label{class_message_abeb18628319096b1679c0ce4e8e51344} 
+QString Message\+::get\+Chat\+Room\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the chat room name. 
+
+\begin{DoxyReturn}{Returns}
+The name of the chat room. 
+\end{DoxyReturn}
+\Hypertarget{class_message_ae64d3644ca4c42b0b09422eb5676ada6}\index{Message@{Message}!getContent@{getContent}}
+\index{getContent@{getContent}!Message@{Message}}
+\doxysubsubsection{\texorpdfstring{getContent()}{getContent()}}
+{\footnotesize\ttfamily \label{class_message_ae64d3644ca4c42b0b09422eb5676ada6} 
+QString Message\+::get\+Content (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the content of the message. 
+
+\begin{DoxyReturn}{Returns}
+The content of the message. 
+\end{DoxyReturn}
+\Hypertarget{class_message_af512b41449d2ae54fb90d309991f7b50}\index{Message@{Message}!getSender@{getSender}}
+\index{getSender@{getSender}!Message@{Message}}
+\doxysubsubsection{\texorpdfstring{getSender()}{getSender()}}
+{\footnotesize\ttfamily \label{class_message_af512b41449d2ae54fb90d309991f7b50} 
+QString Message\+::get\+Sender (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the sender of the message. 
+
+\begin{DoxyReturn}{Returns}
+The sender of the message. 
+\end{DoxyReturn}
+\Hypertarget{class_message_ab5e1eb7db5790225e798dd8517ca292b}\index{Message@{Message}!getTimestamp@{getTimestamp}}
+\index{getTimestamp@{getTimestamp}!Message@{Message}}
+\doxysubsubsection{\texorpdfstring{getTimestamp()}{getTimestamp()}}
+{\footnotesize\ttfamily \label{class_message_ab5e1eb7db5790225e798dd8517ca292b} 
+QDate\+Time Message\+::get\+Timestamp (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the timestamp of the message. 
+
+\begin{DoxyReturn}{Returns}
+The timestamp of the message. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+message.\+h\item 
+message.\+cpp\end{DoxyCompactItemize}

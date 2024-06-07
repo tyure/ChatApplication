@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['generatechatfilename_0',['generateChatFilename',['../class_chat_client.html#a92d60523857784756b2d1f6f7fc5a63d',1,'ChatClient']]],
+  ['getchatroomname_1',['getChatRoomName',['../class_message.html#abeb18628319096b1679c0ce4e8e51344',1,'Message']]],
+  ['getchatrooms_2',['getChatRooms',['../class_chat_client.html#ab07770cdbe368f371ba7cd9270c9f5a5',1,'ChatClient']]],
+  ['getcontent_3',['getContent',['../class_message.html#ae64d3644ca4c42b0b09422eb5676ada6',1,'Message']]],
+  ['getfriends_4',['getFriends',['../class_chat_client.html#ab45ff11c8a4682b24bbe0ff925523e53',1,'ChatClient']]],
+  ['getgroupname_5',['getGroupName',['../class_group_chat_dialog.html#a655edaa536bceeea49b6cc9364ea311c',1,'GroupChatDialog']]],
+  ['getmessages_6',['getMessages',['../class_chat_room.html#a0c549131e140c749f600de623a187d71',1,'ChatRoom']]],
+  ['getname_7',['getName',['../class_chat_room.html#a9952ef8364f78afe6c142cf9a529ea57',1,'ChatRoom']]],
+  ['getparticipants_8',['getParticipants',['../class_chat_room.html#ae294e12541f37749633976790533aadc',1,'ChatRoom']]],
+  ['getregisteredusers_9',['getRegisteredUsers',['../class_chat_client.html#a35004a2baded24db2f1acf02499fb78b',1,'ChatClient']]],
+  ['getselectedusers_10',['getSelectedUsers',['../class_group_chat_dialog.html#a75e77251a2da147f0029f604bb2aec1d',1,'GroupChatDialog']]],
+  ['getsender_11',['getSender',['../class_message.html#af512b41449d2ae54fb90d309991f7b50',1,'Message']]],
+  ['gettimestamp_12',['getTimestamp',['../class_message.html#ab5e1eb7db5790225e798dd8517ca292b',1,'Message']]],
+  ['getuser_13',['getUser',['../class_chat_client.html#a118cdbc9cff002f6169bb1e1307f3c13',1,'ChatClient']]],
+  ['getusername_14',['getUsername',['../class_user.html#a1c9ee5527f563fb644e0ad6bbab79f41',1,'User']]],
+  ['groupchatdialog_15',['GroupChatDialog',['../class_group_chat_dialog.html#a1355911255cb02435ae340d387c36194',1,'GroupChatDialog']]],
+  ['groupchatwindow_16',['GroupChatWindow',['../class_group_chat_window.html#a2a50b968fc87ca121ae1594324522216',1,'GroupChatWindow']]]
+];

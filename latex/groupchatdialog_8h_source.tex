@@ -1,0 +1,42 @@
+\doxysection{groupchatdialog.\+h}
+\hypertarget{groupchatdialog_8h_source}{}\label{groupchatdialog_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GROUPCHATDIALOG\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GROUPCHATDIALOG\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QListWidgetItem>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}chatclient.h"{}}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_group_chat_dialog}{GroupChatDialog}};}
+\DoxyCodeLine{00010\ \}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_group_chat_dialog}{GroupChatDialog}}\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_group_chat_dialog_a1355911255cb02435ae340d387c36194}{GroupChatDialog}}(\mbox{\hyperlink{class_chat_client}{ChatClient}}\ *chatClient,\ QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_group_chat_dialog_afb75704e4ca16b455f201fe6fff3af61}{\string~GroupChatDialog}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00036\ \ \ \ \ QStringList\ \mbox{\hyperlink{class_group_chat_dialog_a75e77251a2da147f0029f604bb2aec1d}{getSelectedUsers}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \ \ \ \ QString\ \mbox{\hyperlink{class_group_chat_dialog_a655edaa536bceeea49b6cc9364ea311c}{getGroupName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_addUserButton\_clicked();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00053\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_removeUserButton\_clicked();}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00058\ \ \ \ \ \textcolor{keywordtype}{void}\ on\_saveButton\_clicked();}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00061\ \ \ \ \ Ui::GroupChatDialog\ *ui;\ }
+\DoxyCodeLine{00062\ \ \ \ \ \mbox{\hyperlink{class_chat_client}{ChatClient}}\ *chatClient;\ }
+\DoxyCodeLine{00063\ \};}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00065\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ GROUPCHATDIALOG\_H}}
+
+\end{DoxyCode}

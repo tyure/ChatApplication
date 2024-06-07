@@ -1,0 +1,83 @@
+\doxysection{chatclient.\+h}
+\hypertarget{chatclient_8h_source}{}\label{chatclient_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CHATCLIENT\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CHATCLIENT\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QStringList>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QList>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}chatroom.h"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}friend.h"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}user.h"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_chat_client}{ChatClient}}\ :\ \textcolor{keyword}{public}\ QObject}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_chat_client}{ChatClient}}(QObject\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chat_client_a8f439ac5b4b90db5b72399cd0480e759}{setUser}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_user}{User}}\ \&user);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{class_user}{User}}\ \mbox{\hyperlink{class_chat_client_a118cdbc9cff002f6169bb1e1307f3c13}{getUser}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chat_client_af37a0f29528d966ec23c345dca3e3c95}{createChat}}(\textcolor{keyword}{const}\ QString\ \&friendName);}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chat_client_aa8130d88ab08ad74693bd9da308a1087}{createGroupChat}}(\textcolor{keyword}{const}\ QString\ \&groupName,\ \textcolor{keyword}{const}\ QStringList\ \&users,\ \textcolor{keyword}{const}\ QString\ \&creator);}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chat_client_a1352eca8d3760bfb489cc3ca81d95453}{sendMessage}}(\textcolor{keyword}{const}\ QString\ \&roomName,\ \textcolor{keyword}{const}\ QString\ \&content);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chat_client_a74d1a6f01292be5312963fda8f8f837c}{sendGroupChatMessage}}(\textcolor{keyword}{const}\ QString\ \&roomName,\ \textcolor{keyword}{const}\ QString\ \&content);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chat_client_a6ffdd6a403ccc04ba7c488d0f2d3b487}{deleteChat}}(\textcolor{keyword}{const}\ QString\ \&roomName);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00071\ \ \ \ \ QList<ChatRoom>\ \mbox{\hyperlink{class_chat_client_ab07770cdbe368f371ba7cd9270c9f5a5}{getChatRooms}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chat_client_a2413336a03550d88d20bc37904c2125e}{saveChatRooms}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chat_client_a16480968fbc8d3e562c3c6e6d743d004}{loadChatRooms}}();}
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00087\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chat_client_a64b5ea287b21b6936ed507c1ad3c4f95}{addFriend}}(\textcolor{keyword}{const}\ QString\ \&friendName);}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chat_client_a0d758c38190de7087d60de7f36ccbb41}{removeFriend}}(\textcolor{keyword}{const}\ QString\ \&friendName);}
+\DoxyCodeLine{00094\ }
+\DoxyCodeLine{00099\ \ \ \ \ QList<Friend>\ \mbox{\hyperlink{class_chat_client_ab45ff11c8a4682b24bbe0ff925523e53}{getFriends}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chat_client_acc878f3bb48206d1653e21558730cf1c}{saveFriends}}(\textcolor{keyword}{const}\ QString\ \&username)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00111\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chat_client_adde9d948f05d40381c424de83e39ea53}{loadFriends}}(\textcolor{keyword}{const}\ QString\ \&username);}
+\DoxyCodeLine{00112\ }
+\DoxyCodeLine{00117\ \ \ \ \ QList<QString>\ \mbox{\hyperlink{class_chat_client_a35004a2baded24db2f1acf02499fb78b}{getRegisteredUsers}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00118\ }
+\DoxyCodeLine{00122\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chat_client_a75d827bd62210f33e548a2ad96b91801}{loadRegisteredUsers}}();}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00127\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chat_client_a9dfbbf1680a05739d9f14a23f7101c8c}{createUserFiles}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00128\ }
+\DoxyCodeLine{00134\ \ \ \ \ QString\ \mbox{\hyperlink{class_chat_client_a92d60523857784756b2d1f6f7fc5a63d}{generateChatFilename}}(\textcolor{keyword}{const}\ QString\ \&friendName)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00140\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chat_client_a422e2dd5e87c82956c54372a2dbbf7d2}{saveChatToFile}}(\textcolor{keyword}{const}\ QString\ \&roomName)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00146\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chat_client_a7f840922268e5874250d70ef95794090}{loadChatFromFile}}(\textcolor{keyword}{const}\ QString\ \&roomName);}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00153\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chat_client_a95bbdc3cf48fa27245598d9fcb6a4360}{appendChatToUserChatRooms}}(\textcolor{keyword}{const}\ QString\ \&username,\ \textcolor{keyword}{const}\ QString\ \&roomName)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00154\ }
+\DoxyCodeLine{00160\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chat_client_af1fdd1e06b359258530a3210f523f3d9}{removeChatFromUserChatRooms}}(\textcolor{keyword}{const}\ QString\ \&username,\ \textcolor{keyword}{const}\ QString\ \&roomName)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00161\ }
+\DoxyCodeLine{00167\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chat_client_a57f35e9c7c74f848485e34a0642e5acc}{addUserToGroup}}(\textcolor{keyword}{const}\ QString\ \&groupName,\ \textcolor{keyword}{const}\ QString\ \&username);}
+\DoxyCodeLine{00168\ }
+\DoxyCodeLine{00169\ signals:}
+\DoxyCodeLine{00174\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_chat_client_ad4165d1d8d8f3755353eac7dcc0257dc}{messageReceived}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_message}{Message}}\ \&message);}
+\DoxyCodeLine{00175\ }
+\DoxyCodeLine{00176\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00177\ \ \ \ \ \mbox{\hyperlink{class_user}{User}}\ user;\ }
+\DoxyCodeLine{00178\ \ \ \ \ QList<ChatRoom>\ chatRooms;\ }
+\DoxyCodeLine{00179\ \ \ \ \ QList<Friend>\ friends;\ }
+\DoxyCodeLine{00180\ \ \ \ \ QList<QString>\ registeredUsers;\ }
+\DoxyCodeLine{00181\ }
+\DoxyCodeLine{00188\ \ \ \ \ \textcolor{keywordtype}{void}\ createGroupChatFiles(\textcolor{keyword}{const}\ QString\ \&username,\ \textcolor{keyword}{const}\ QString\ \&groupName,\ \textcolor{keyword}{const}\ QStringList\ \&users)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00189\ \};}
+\DoxyCodeLine{00190\ }
+\DoxyCodeLine{00191\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ CHATCLIENT\_H}}
+
+\end{DoxyCode}

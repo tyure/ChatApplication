@@ -1,0 +1,17 @@
+digraph "ChatClient::addUserToGroup"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="LR";
+  Node1 [id="Node000001",label="ChatClient::addUserToGroup",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Adds a user to a group chat."];
+  Node1 -> Node2 [id="edge5_Node000001_Node000002",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="ChatClient::appendChatTo\lUserChatRooms",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_chat_client.html#a95bbdc3cf48fa27245598d9fcb6a4360",tooltip="Appends a chat to the user's chat rooms."];
+  Node1 -> Node3 [id="edge6_Node000001_Node000003",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="ChatRoom::getName",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_chat_room.html#a9952ef8364f78afe6c142cf9a529ea57",tooltip="Gets the name of the chat room."];
+  Node1 -> Node4 [id="edge7_Node000001_Node000004",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="ChatRoom::getParticipants",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_chat_room.html#ae294e12541f37749633976790533aadc",tooltip="Gets the list of participants."];
+  Node1 -> Node5 [id="edge8_Node000001_Node000005",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="ChatClient::saveChatToFile",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_chat_client.html#a422e2dd5e87c82956c54372a2dbbf7d2",tooltip="Saves a chat to a file."];
+}

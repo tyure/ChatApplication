@@ -1,0 +1,179 @@
+\doxysection{Chat\+Room Class Reference}
+\hypertarget{class_chat_room}{}\label{class_chat_room}\index{ChatRoom@{ChatRoom}}
+
+
+The \doxylink{class_chat_room}{Chat\+Room} class represents a chat room with messages and participants.  
+
+
+
+
+{\ttfamily \#include $<$chatroom.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_chat_room_a7debb5488f474e5ebcf472a98d45ee3a}{Chat\+Room}} (const QString \&name)
+\begin{DoxyCompactList}\small\item\em Constructor with name. \end{DoxyCompactList}\item 
+QString \mbox{\hyperlink{class_chat_room_a9952ef8364f78afe6c142cf9a529ea57}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Gets the name of the chat room. \end{DoxyCompactList}\item 
+QList$<$ \mbox{\hyperlink{class_message}{Message}} $>$ \mbox{\hyperlink{class_chat_room_a0c549131e140c749f600de623a187d71}{get\+Messages}} () const
+\begin{DoxyCompactList}\small\item\em Gets the list of messages in the chat room. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_room_a1b093087681f8efbb6a53d47036febe5}{add\+Message}} (const \mbox{\hyperlink{class_message}{Message}} \&message)
+\begin{DoxyCompactList}\small\item\em Adds a message to the chat room. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_room_a9c2e607a0ff7eb611aee7fe424418d5b}{load\+Messages}} (const QString \&filename)
+\begin{DoxyCompactList}\small\item\em Loads messages from a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_room_abac7b9c57691fcfedf723f5303ce7411}{save\+Messages}} (const QString \&filename) const
+\begin{DoxyCompactList}\small\item\em Saves messages to a file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_chat_room_ae83624abe08736999b660e680a174225}{add\+Participant}} (const QString \&participant)
+\begin{DoxyCompactList}\small\item\em Adds a participant to the chat room. \end{DoxyCompactList}\item 
+QString\+List \mbox{\hyperlink{class_chat_room_ae294e12541f37749633976790533aadc}{get\+Participants}} () const
+\begin{DoxyCompactList}\small\item\em Gets the list of participants. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_chat_room_a49975dba463eaa0de1a53a2a3622c781}{operator==}} (const \mbox{\hyperlink{class_chat_room}{Chat\+Room}} \&other) const
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \doxylink{class_chat_room}{Chat\+Room} class represents a chat room with messages and participants. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_chat_room_a7debb5488f474e5ebcf472a98d45ee3a}\index{ChatRoom@{ChatRoom}!ChatRoom@{ChatRoom}}
+\index{ChatRoom@{ChatRoom}!ChatRoom@{ChatRoom}}
+\doxysubsubsection{\texorpdfstring{ChatRoom()}{ChatRoom()}}
+{\footnotesize\ttfamily \label{class_chat_room_a7debb5488f474e5ebcf472a98d45ee3a} 
+Chat\+Room\+::\+Chat\+Room (\begin{DoxyParamCaption}\item[{const QString \&}]{name}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Constructor with name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the chat room. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_chat_room_a1b093087681f8efbb6a53d47036febe5}\index{ChatRoom@{ChatRoom}!addMessage@{addMessage}}
+\index{addMessage@{addMessage}!ChatRoom@{ChatRoom}}
+\doxysubsubsection{\texorpdfstring{addMessage()}{addMessage()}}
+{\footnotesize\ttfamily \label{class_chat_room_a1b093087681f8efbb6a53d47036febe5} 
+void Chat\+Room\+::add\+Message (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_message}{Message}} \&}]{message}{}\end{DoxyParamCaption})}
+
+
+
+Adds a message to the chat room. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message to be added. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chat_room_ae83624abe08736999b660e680a174225}\index{ChatRoom@{ChatRoom}!addParticipant@{addParticipant}}
+\index{addParticipant@{addParticipant}!ChatRoom@{ChatRoom}}
+\doxysubsubsection{\texorpdfstring{addParticipant()}{addParticipant()}}
+{\footnotesize\ttfamily \label{class_chat_room_ae83624abe08736999b660e680a174225} 
+void Chat\+Room\+::add\+Participant (\begin{DoxyParamCaption}\item[{const QString \&}]{participant}{}\end{DoxyParamCaption})}
+
+
+
+Adds a participant to the chat room. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em participant} & The name of the participant. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chat_room_a0c549131e140c749f600de623a187d71}\index{ChatRoom@{ChatRoom}!getMessages@{getMessages}}
+\index{getMessages@{getMessages}!ChatRoom@{ChatRoom}}
+\doxysubsubsection{\texorpdfstring{getMessages()}{getMessages()}}
+{\footnotesize\ttfamily \label{class_chat_room_a0c549131e140c749f600de623a187d71} 
+QList$<$ \mbox{\hyperlink{class_message}{Message}} $>$ Chat\+Room\+::get\+Messages (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the list of messages in the chat room. 
+
+\begin{DoxyReturn}{Returns}
+The list of messages. 
+\end{DoxyReturn}
+\Hypertarget{class_chat_room_a9952ef8364f78afe6c142cf9a529ea57}\index{ChatRoom@{ChatRoom}!getName@{getName}}
+\index{getName@{getName}!ChatRoom@{ChatRoom}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_chat_room_a9952ef8364f78afe6c142cf9a529ea57} 
+QString Chat\+Room\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the name of the chat room. 
+
+\begin{DoxyReturn}{Returns}
+The name of the chat room. 
+\end{DoxyReturn}
+\Hypertarget{class_chat_room_ae294e12541f37749633976790533aadc}\index{ChatRoom@{ChatRoom}!getParticipants@{getParticipants}}
+\index{getParticipants@{getParticipants}!ChatRoom@{ChatRoom}}
+\doxysubsubsection{\texorpdfstring{getParticipants()}{getParticipants()}}
+{\footnotesize\ttfamily \label{class_chat_room_ae294e12541f37749633976790533aadc} 
+QString\+List Chat\+Room\+::get\+Participants (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the list of participants. 
+
+\begin{DoxyReturn}{Returns}
+The list of participants. 
+\end{DoxyReturn}
+\Hypertarget{class_chat_room_a9c2e607a0ff7eb611aee7fe424418d5b}\index{ChatRoom@{ChatRoom}!loadMessages@{loadMessages}}
+\index{loadMessages@{loadMessages}!ChatRoom@{ChatRoom}}
+\doxysubsubsection{\texorpdfstring{loadMessages()}{loadMessages()}}
+{\footnotesize\ttfamily \label{class_chat_room_a9c2e607a0ff7eb611aee7fe424418d5b} 
+void Chat\+Room\+::load\+Messages (\begin{DoxyParamCaption}\item[{const QString \&}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Loads messages from a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_chat_room_a49975dba463eaa0de1a53a2a3622c781}\index{ChatRoom@{ChatRoom}!operator==@{operator==}}
+\index{operator==@{operator==}!ChatRoom@{ChatRoom}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily \label{class_chat_room_a49975dba463eaa0de1a53a2a3622c781} 
+bool Chat\+Room\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_chat_room}{Chat\+Room}} \&}]{other}{}\end{DoxyParamCaption}) const}
+
+
+
+Equality operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & The other chat room to compare with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the chat rooms are equal, otherwise false. 
+\end{DoxyReturn}
+\Hypertarget{class_chat_room_abac7b9c57691fcfedf723f5303ce7411}\index{ChatRoom@{ChatRoom}!saveMessages@{saveMessages}}
+\index{saveMessages@{saveMessages}!ChatRoom@{ChatRoom}}
+\doxysubsubsection{\texorpdfstring{saveMessages()}{saveMessages()}}
+{\footnotesize\ttfamily \label{class_chat_room_abac7b9c57691fcfedf723f5303ce7411} 
+void Chat\+Room\+::save\+Messages (\begin{DoxyParamCaption}\item[{const QString \&}]{filename}{}\end{DoxyParamCaption}) const}
+
+
+
+Saves messages to a file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The name of the file. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+chatroom.\+h\item 
+chatroom.\+cpp\end{DoxyCompactItemize}

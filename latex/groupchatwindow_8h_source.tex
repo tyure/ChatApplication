@@ -1,0 +1,40 @@
+\doxysection{groupchatwindow.\+h}
+\hypertarget{groupchatwindow_8h_source}{}\label{groupchatwindow_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ GROUPCHATWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ GROUPCHATWINDOW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}chatclient.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00008\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_group_chat_window}{GroupChatWindow}};}
+\DoxyCodeLine{00009\ \}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_group_chat_window}{GroupChatWindow}}\ :\ \textcolor{keyword}{public}\ QDialog}
+\DoxyCodeLine{00015\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_group_chat_window_a2a50b968fc87ca121ae1594324522216}{GroupChatWindow}}(\mbox{\hyperlink{class_chat_client}{ChatClient}}\ *chatClient,\ \textcolor{keyword}{const}\ QString\ \&groupName,\ QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_group_chat_window_a8714d429dc9994d3965df7e9c7fde72c}{\string~GroupChatWindow}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ sendMessage();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keywordtype}{void}\ receiveMessage(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_message}{Message}}\ \&message);}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{void}\ addUser();}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00049\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00050\ \ \ \ \ Ui::GroupChatWindow\ *ui;\ }
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_chat_client}{ChatClient}}\ *chatClient;\ }
+\DoxyCodeLine{00052\ \ \ \ \ QString\ groupName;\ }
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ loadChatHistory();}
+\DoxyCodeLine{00058\ \};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ GROUPCHATWINDOW\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,22 @@
+\doxysection{Chat\+Application Class Reference}
+\hypertarget{class_chat_application}{}\label{class_chat_application}\index{ChatApplication@{ChatApplication}}
+
+
+Inheritance diagram for Chat\+Application\+:
+% FIG 0
+
+
+Collaboration diagram for Chat\+Application\+:
+% FIG 1
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_chat_application_a199c965e446ece45093fe1cc08bb222a}\label{class_chat_application_a199c965e446ece45093fe1cc08bb222a} 
+{\bfseries Chat\+Application} (QWidget \texorpdfstring{$\ast$}{*}parent=nullptr)
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+chatapplication.\+h\item 
+chatapplication.\+cpp\end{DoxyCompactItemize}

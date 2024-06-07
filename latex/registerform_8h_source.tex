@@ -1,0 +1,39 @@
+\doxysection{registerform.\+h}
+\hypertarget{registerform_8h_source}{}\label{registerform_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ REGISTERFORM\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ REGISTERFORM\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00007\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_register_form}{RegisterForm}};}
+\DoxyCodeLine{00008\ \}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_register_form}{RegisterForm}}\ :\ \textcolor{keyword}{public}\ QDialog\ \{}
+\DoxyCodeLine{00014\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_register_form_ac1b664f3c83ea2cc89529e3cec064253}{RegisterForm}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_register_form_ac3bbb82a010be477dbe669fc61d0c0a0}{\string~RegisterForm}}();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ signals:}
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_register_form_a83076b0b6f9cb8493cd5c6e0c7a7e00a}{registrationSuccessful}}(\textcolor{keyword}{const}\ QString\ \&username);}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_register_form_a92d2ea5d2eda62d254ee4fe30433866d}{loginSuccessful}}(\textcolor{keyword}{const}\ QString\ \&username);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ onRegisterButtonClicked();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ onLoginButtonClicked();}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00053\ \ \ \ \ Ui::RegisterForm\ *ui;\ }
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{bool}\ isUserExists(\textcolor{keyword}{const}\ QString\ \&username);}
+\DoxyCodeLine{00061\ \};}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ REGISTERFORM\_H}}
+
+\end{DoxyCode}

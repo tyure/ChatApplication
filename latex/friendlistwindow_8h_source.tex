@@ -1,0 +1,40 @@
+\doxysection{friendlistwindow.\+h}
+\hypertarget{friendlistwindow_8h_source}{}\label{friendlistwindow_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FRIENDLISTWINDOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FRIENDLISTWINDOW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QDialog>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QListWidget>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QPushButton>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}chatclient.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{namespace\ }Ui\ \{}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_friend_list_window}{FriendListWindow}};}
+\DoxyCodeLine{00011\ \}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_friend_list_window}{FriendListWindow}}\ :\ \textcolor{keyword}{public}\ QDialog\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{class_friend_list_window_a68bfeab235f3dff7ec6a9771de0807f9}{FriendListWindow}}(\mbox{\hyperlink{class_chat_client}{ChatClient}}\ *chatClient,\ QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_friend_list_window_aa2cefc57abd2f94fbf08e665cbc1ca7b}{\string~FriendListWindow}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{private}\ slots:}
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ addFriend();}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ removeFriend();}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00044\ \ \ \ \ Ui::FriendListWindow\ *ui;\ }
+\DoxyCodeLine{00045\ \ \ \ \ \mbox{\hyperlink{class_chat_client}{ChatClient}}\ *chatClient;\ }
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ loadFriends();}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ saveFriends();}
+\DoxyCodeLine{00056\ \};}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ FRIENDLISTWINDOW\_H}}
+
+\end{DoxyCode}
